@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 
-// Lazy-load stub components for scalability (change to eager load if desired)
+// Main route config: All features are now lazy-loaded modules
 export const routes: Routes = [
   {
     path: '',
@@ -10,26 +10,22 @@ export const routes: Routes = [
   {
     path: 'nearby',
     title: 'Nearby Stops',
-    loadComponent: () =>
-      import('./nearby-stops/nearby-stops.component').then(m => m.NearbyStopsComponent)
+    loadChildren: () => import('./nearby-stops/nearby-stops.module').then(m => m.NearbyStopsModule)
   },
   {
     path: 'plan',
     title: 'Plan Trip',
-    loadComponent: () =>
-      import('./plan-trip/plan-trip.component').then(m => m.PlanTripComponent)
+    loadChildren: () => import('./plan-trip/plan-trip.module').then(m => m.PlanTripModule)
   },
   {
     path: 'saved',
     title: 'Saved Routes',
-    loadComponent: () =>
-      import('./saved-routes/saved-routes.component').then(m => m.SavedRoutesComponent)
+    loadChildren: () => import('./saved-routes/saved-routes.module').then(m => m.SavedRoutesModule)
   },
   {
     path: 'city',
     title: 'My City',
-    loadComponent: () =>
-      import('./my-city/my-city.component').then(m => m.MyCityComponent)
+    loadChildren: () => import('./my-city/my-city.module').then(m => m.MyCityModule)
   },
   // 404 Route
   {
