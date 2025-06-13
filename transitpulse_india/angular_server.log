@@ -7,36 +7,36 @@ The "disableHostCheck" option will not be used because it is not supported by th
 ❯ Building...
 ✔ Building...
 Browser bundles     
-Initial chunk files  | Names                  |  Raw size
-polyfills.js         | polyfills              |  90.20 kB | 
-main.js              | main                   |  26.93 kB | 
-chunk-YQOESBWP.js    | -                      | 754 bytes | 
-styles.css           | styles                 | 164 bytes | 
+Initial chunk files  | Names               |  Raw size
+polyfills.js         | polyfills           |  90.20 kB | 
+main.js              | main                |  26.91 kB | 
+chunk-YQOESBWP.js    | -                   | 754 bytes | 
+styles.css           | styles              | 164 bytes | 
 
-                     | Initial total          | 118.05 kB
+                     | Initial total       | 118.03 kB
 
-Lazy chunk files     | Names                  |  Raw size
-chunk-3RQARDIM.js    | nearby-stops-component |   1.76 kB | 
-chunk-ZXAFUC4K.js    | saved-routes-component |   1.75 kB | 
-chunk-RVNMWHUG.js    | plan-trip-component    |   1.73 kB | 
-chunk-R3Z3VX4W.js    | my-city-component      |   1.67 kB | 
+Lazy chunk files     | Names               |  Raw size
+chunk-SJL4UBMP.js    | nearby-stops-module |   2.48 kB | 
+chunk-IXYJEW2I.js    | saved-routes-module |   2.47 kB | 
+chunk-I4U4MT44.js    | plan-trip-module    |   2.42 kB | 
+chunk-4J6FFX3F.js    | my-city-module      |   2.34 kB | 
 
 
 Server bundles      
-Initial chunk files  | Names                  |  Raw size
-polyfills.server.mjs | polyfills.server       | 572.91 kB | 
-chunk-JO4D3LGB.mjs   | -                      |  27.37 kB | 
-server.mjs           | server                 |   1.42 kB | 
-main.server.mjs      | main.server            | 831 bytes | 
-chunk-FFILDKJJ.mjs   | -                      | 788 bytes | 
+Initial chunk files  | Names               |  Raw size
+polyfills.server.mjs | polyfills.server    | 572.91 kB | 
+chunk-MRDMQG45.mjs   | -                   |  27.34 kB | 
+server.mjs           | server              |   1.42 kB | 
+main.server.mjs      | main.server         | 831 bytes | 
+chunk-FFILDKJJ.mjs   | -                   | 788 bytes | 
 
-Lazy chunk files     | Names                  |  Raw size
-chunk-3ANLY4XN.mjs   | nearby-stops-component |   1.80 kB | 
-chunk-WCEO3T65.mjs   | saved-routes-component |   1.78 kB | 
-chunk-3GLBIX6M.mjs   | plan-trip-component    |   1.76 kB | 
-chunk-YVCXOOOY.mjs   | my-city-component      |   1.71 kB | 
+Lazy chunk files     | Names               |  Raw size
+chunk-MJWRVJQO.mjs   | nearby-stops-module |   2.52 kB | 
+chunk-GYU25L2D.mjs   | saved-routes-module |   2.51 kB | 
+chunk-HWJPFCVE.mjs   | plan-trip-module    |   2.45 kB | 
+chunk-C5IT2HCS.mjs   | my-city-module      |   2.38 kB | 
 
-Application bundle generation complete. [2.547 seconds]
+Application bundle generation complete. [2.705 seconds]
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
@@ -44,89 +44,25 @@ NOTE: Raw file sizes do not reflect development server per-request transformatio
   ➜  Network: http://172.17.0.2:3000/
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.347 seconds]
+Initial chunk files | Names  | Raw size
+styles.css          | styles |  4.00 kB | 
 
-✘ [ERROR] Could not resolve "./nearby-stops/nearby-stops.module"
+Application bundle generation complete. [0.043 seconds]
 
-    src/app/app.routes.ts:11:35:
-      11 │ ... () => import('./nearby-stops/nearby-stops.module').then(m => m...
-         ╵                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './nearby-stops/nearby-stops.module' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:13:31:
-      13 │ ... () => import('./nearby-stops/nearby-stops.module').then(m => m...
-         ╵                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |  28.33 kB | 
 
 
-✘ [ERROR] Could not resolve "./plan-trip/plan-trip.module"
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-NEG4GXXH.mjs  | -           |  28.77 kB | 
+server.mjs          | server      |   1.42 kB | 
+main.server.mjs     | main.server | 831 bytes | 
 
-    src/app/app.routes.ts:16:35:
-      16 │ ...en: () => import('./plan-trip/plan-trip.module').then(m => m.Pl...
-         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Application bundle generation complete. [0.472 seconds]
 
-
-✘ [ERROR] TS2307: Cannot find module './plan-trip/plan-trip.module' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:18:31:
-      18 │ ...en: () => import('./plan-trip/plan-trip.module').then(m => m.Pl...
-         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./saved-routes/saved-routes.module"
-
-    src/app/app.routes.ts:21:35:
-      21 │ ... () => import('./saved-routes/saved-routes.module').then(m => m...
-         ╵                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './saved-routes/saved-routes.module' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:23:31:
-      23 │ ... () => import('./saved-routes/saved-routes.module').then(m => m...
-         ╵                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./my-city/my-city.module"
-
-    src/app/app.routes.ts:26:35:
-      26 │ ...dren: () => import('./my-city/my-city.module').then(m => m.MyCi...
-         ╵                       ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './my-city/my-city.module' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:28:31:
-      28 │ ...dren: () => import('./my-city/my-city.module').then(m => m.MyCi...
-         ╵                       ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./nearby-stops/nearby-stops.module"
-
-    src/app/app.routes.ts:11:35:
-      11 │ ... () => import('./nearby-stops/nearby-stops.module').then(m => m...
-         ╵                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./plan-trip/plan-trip.module"
-
-    src/app/app.routes.ts:16:35:
-      16 │ ...en: () => import('./plan-trip/plan-trip.module').then(m => m.Pl...
-         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./saved-routes/saved-routes.module"
-
-    src/app/app.routes.ts:21:35:
-      21 │ ... () => import('./saved-routes/saved-routes.module').then(m => m...
-         ╵                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./my-city/my-city.module"
-
-    src/app/app.routes.ts:26:35:
-      26 │ ...dren: () => import('./my-city/my-city.module').then(m => m.MyCi...
-         ╵                       ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
+Page reload sent to client(s).
