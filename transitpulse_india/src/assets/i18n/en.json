@@ -1,0 +1,38 @@
+{
+  "APP": {
+    "TITLE": "TransitPulse India",
+    "GREETING": "Hello, {{title}}",
+    "CONGRATS": "Congratulations! Your app is running. 🎉",
+    "EXPLORE_DOCS": "Explore the Docs",
+    "LEARN_TUTORIALS": "Learn with Tutorials",
+    "CLI_DOCS": "CLI Docs",
+    "LANGUAGE_SERVICE": "Angular Language Service",
+    "DEVTOOLS": "Angular DevTools",
+    "NEARBY": "Nearby",
+    "PLAN_TRIP": "Plan Trip",
+    "SAVED": "Saved",
+    "MY_CITY": "My City"
+  },
+  "NEARBY": {
+    "TITLE": "Nearby Stops",
+    "SUBTITLE": "Find stops, stations, and departures near your location.",
+    "PLACEHOLDER": "[Map and stop list coming soon]"
+  },
+  "PLAN": {
+    "TITLE": "Plan Trip",
+    "SUBTITLE": "Plan a journey across the city with walking and public transport routes.",
+    "PLACEHOLDER": "[Trip planner UI coming soon]"
+  },
+  "SAVED": {
+    "TITLE": "Saved Routes",
+    "SUBTITLE": "Access your favorite and offline routes here.",
+    "PLACEHOLDER": "[Saved routes list coming soon]"
+  },
+  "MYCITY": {
+    "TITLE": "My City",
+    "SUBTITLE": "Select a city and manage app preferences.",
+    "PLACEHOLDER": "[City selection/settings coming soon]",
+    "LANGUAGE_LABEL": "Language",
+    "SELECT_LANG": "Select Language"
+  }
+}

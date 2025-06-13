@@ -225,8 +225,8 @@
           <clipPath id="a"><path fill="#fff" d="M0 0h982v239H0z" /></clipPath>
         </defs>
       </svg>
-      <h1>Hello, {{ title }}</h1>
-      <p>Congratulations! Your app is running. 🎉</p>
+      <h1>{{ 'APP.GREETING' | translate:{title: (title | translate)} }}</h1>
+      <p>{{ 'APP.CONGRATS' | translate }}</p>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
@@ -337,25 +337,37 @@
   Main app layout: router outlet + mobile-friendly bottom navigation.
   Tabs: Nearby Stops, Plan Trip, Saved Routes, My City.
 -->
+<!-- Language Switch Dropdown (top right fixed, above nav) -->
+<div style="position: fixed; top: 14px; right: 18px; z-index:21; background: #fff; border-radius: 0.5rem; box-shadow: 0 1px 5px rgba(20,40,80,0.06); padding: 0.25rem 0.8rem;" class="lang-switch-ui">
+  <label for="language-switch" style="font-size: 0.97em; margin-right: 0.65em;">
+    {{ 'MYCITY.LANGUAGE_LABEL' | translate }}:
+  </label>
+  <select id="language-switch" [(ngModel)]="activeLang" (change)="setLanguage($event.target.value)">
+    <option *ngFor="let lang of languages" [value]="lang.code">
+      {{ lang.label }}
+    </option>
+  </select>
+</div>
+
 <main class="app-main">
   <router-outlet></router-outlet>
 </main>
 
 <nav class="bottom-nav" role="navigation" aria-label="Main sections">
-  <a routerLink="/nearby" routerLinkActive="active" aria-label="Nearby Stops">
+  <a routerLink="/nearby" routerLinkActive="active" aria-label="{{ 'APP.NEARBY' | translate }}">
     <span class="material-icons" aria-hidden="true">location_on</span>
-    <span>Nearby</span>
+    <span>{{ 'APP.NEARBY' | translate }}</span>
   </a>
-  <a routerLink="/plan" routerLinkActive="active" aria-label="Plan Trip">
+  <a routerLink="/plan" routerLinkActive="active" aria-label="{{ 'APP.PLAN_TRIP' | translate }}">
     <span class="material-icons" aria-hidden="true">directions_transit</span>
-    <span>Plan Trip</span>
+    <span>{{ 'APP.PLAN_TRIP' | translate }}</span>
   </a>
-  <a routerLink="/saved" routerLinkActive="active" aria-label="Saved Routes">
+  <a routerLink="/saved" routerLinkActive="active" aria-label="{{ 'APP.SAVED' | translate }}">
     <span class="material-icons" aria-hidden="true">bookmark</span>
-    <span>Saved</span>
+    <span>{{ 'APP.SAVED' | translate }}</span>
   </a>
-  <a routerLink="/city" routerLinkActive="active" aria-label="My City">
+  <a routerLink="/city" routerLinkActive="active" aria-label="{{ 'APP.MY_CITY' | translate }}">
     <span class="material-icons" aria-hidden="true">location_city</span>
-    <span>My City</span>
+    <span>{{ 'APP.MY_CITY' | translate }}</span>
   </a>
 </nav>

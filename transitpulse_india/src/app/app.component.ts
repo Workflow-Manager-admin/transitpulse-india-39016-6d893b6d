@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 /**
  * PUBLIC_INTERFACE
@@ -15,5 +16,24 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'TransitPulse India';
-  // No additional logic required; navigation handled via routerLink.
+  languages = [
+    { code: 'en', label: 'English' },
+    { code: 'hi', label: 'हिन्दी' }
+  ];
+
+  constructor(public translate: TranslateService) {}
+
+  // PUBLIC_INTERFACE
+  setLanguage(lang: string) {
+    /** Switch active language of app and persist to localStorage */
+    this.translate.use(lang);
+    if (typeof window !== "undefined") {
+      localStorage.setItem('app-lang', lang);
+    }
+  }
+
+  // PUBLIC_INTERFACE
+  get activeLang() {
+    return this.translate.currentLang || this.translate.defaultLang || 'en';
+  }
 }
