@@ -1,0 +1,398 @@
+
+> angular@0.0.0 start
+> ng serve --host 0.0.0.0  --no-hmr --disable-host-check --port 3000
+
+Warning: Running a server with --disable-host-check is a security risk. See https://medium.com/webpack/webpack-dev-server-middleware-security-issues-1489d950874a for more information.
+The "disableHostCheck" option will not be used because it is not supported by the "@angular-devkit/build-angular:application" builder.
+❯ Building...
+✔ Building...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  22.59 kB | 
+styles.css           | styles           |  95 bytes | 
+
+                     | Initial total    | 112.88 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-6XEG6CM6.mjs   | -                |  23.02 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [2.409 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.17.0.2:3000/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |  22.60 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-QKVUY53A.mjs  | -           |  23.04 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [0.441 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.308 seconds]
+
+✘ [ERROR] Could not resolve "./nearby-stops/nearby-stops.component"
+
+    src/app/app.routes.ts:11:36:
+      11 │ ...) => import('./nearby-stops/nearby-stops.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './nearby-stops/nearby-stops.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:14:13:
+      14 │       import('./nearby-stops/nearby-stops.component').then(m => m....
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./plan-trip/plan-trip.component"
+
+    src/app/app.routes.ts:16:36:
+      16 │ ...: () => import('./plan-trip/plan-trip.component').then(m => m.P...
+         ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './plan-trip/plan-trip.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:20:13:
+      20 │       import('./plan-trip/plan-trip.component').then(m => m.PlanTr...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./saved-routes/saved-routes.component"
+
+    src/app/app.routes.ts:21:36:
+      21 │ ...) => import('./saved-routes/saved-routes.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './saved-routes/saved-routes.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:26:13:
+      26 │       import('./saved-routes/saved-routes.component').then(m => m....
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./my-city/my-city.component"
+
+    src/app/app.routes.ts:26:36:
+      26 │ ...nt: () => import('./my-city/my-city.component').then(m => m.MyC...
+         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './my-city/my-city.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:32:13:
+      32 │       import('./my-city/my-city.component').then(m => m.MyCityComp...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./nearby-stops/nearby-stops.component"
+
+    src/app/app.routes.ts:11:36:
+      11 │ ...) => import('./nearby-stops/nearby-stops.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./plan-trip/plan-trip.component"
+
+    src/app/app.routes.ts:16:36:
+      16 │ ...: () => import('./plan-trip/plan-trip.component').then(m => m.P...
+         ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./saved-routes/saved-routes.component"
+
+    src/app/app.routes.ts:21:36:
+      21 │ ...) => import('./saved-routes/saved-routes.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./my-city/my-city.component"
+
+    src/app/app.routes.ts:26:36:
+      26 │ ...nt: () => import('./my-city/my-city.component').then(m => m.MyC...
+         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.238 seconds]
+
+✘ [ERROR] Could not resolve "./nearby-stops/nearby-stops.component"
+
+    src/app/app.routes.ts:11:36:
+      11 │ ...) => import('./nearby-stops/nearby-stops.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './nearby-stops/nearby-stops.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:14:13:
+      14 │       import('./nearby-stops/nearby-stops.component').then(m => m....
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./plan-trip/plan-trip.component"
+
+    src/app/app.routes.ts:16:36:
+      16 │ ...: () => import('./plan-trip/plan-trip.component').then(m => m.P...
+         ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './plan-trip/plan-trip.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:20:13:
+      20 │       import('./plan-trip/plan-trip.component').then(m => m.PlanTr...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./saved-routes/saved-routes.component"
+
+    src/app/app.routes.ts:21:36:
+      21 │ ...) => import('./saved-routes/saved-routes.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './saved-routes/saved-routes.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:26:13:
+      26 │       import('./saved-routes/saved-routes.component').then(m => m....
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./my-city/my-city.component"
+
+    src/app/app.routes.ts:26:36:
+      26 │ ...nt: () => import('./my-city/my-city.component').then(m => m.MyC...
+         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './my-city/my-city.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:32:13:
+      32 │       import('./my-city/my-city.component').then(m => m.MyCityComp...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./nearby-stops/nearby-stops.component"
+
+    src/app/app.routes.ts:11:36:
+      11 │ ...) => import('./nearby-stops/nearby-stops.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./plan-trip/plan-trip.component"
+
+    src/app/app.routes.ts:16:36:
+      16 │ ...: () => import('./plan-trip/plan-trip.component').then(m => m.P...
+         ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./saved-routes/saved-routes.component"
+
+    src/app/app.routes.ts:21:36:
+      21 │ ...) => import('./saved-routes/saved-routes.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./my-city/my-city.component"
+
+    src/app/app.routes.ts:26:36:
+      26 │ ...nt: () => import('./my-city/my-city.component').then(m => m.MyC...
+         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.154 seconds]
+
+✘ [ERROR] Could not resolve "./nearby-stops/nearby-stops.component"
+
+    src/app/app.routes.ts:11:36:
+      11 │ ...) => import('./nearby-stops/nearby-stops.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './nearby-stops/nearby-stops.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:14:13:
+      14 │       import('./nearby-stops/nearby-stops.component').then(m => m....
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./plan-trip/plan-trip.component"
+
+    src/app/app.routes.ts:16:36:
+      16 │ ...: () => import('./plan-trip/plan-trip.component').then(m => m.P...
+         ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './plan-trip/plan-trip.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:20:13:
+      20 │       import('./plan-trip/plan-trip.component').then(m => m.PlanTr...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./saved-routes/saved-routes.component"
+
+    src/app/app.routes.ts:21:36:
+      21 │ ...) => import('./saved-routes/saved-routes.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './saved-routes/saved-routes.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:26:13:
+      26 │       import('./saved-routes/saved-routes.component').then(m => m....
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./my-city/my-city.component"
+
+    src/app/app.routes.ts:26:36:
+      26 │ ...nt: () => import('./my-city/my-city.component').then(m => m.MyC...
+         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './my-city/my-city.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:32:13:
+      32 │       import('./my-city/my-city.component').then(m => m.MyCityComp...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./nearby-stops/nearby-stops.component"
+
+    src/app/app.routes.ts:11:36:
+      11 │ ...) => import('./nearby-stops/nearby-stops.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./plan-trip/plan-trip.component"
+
+    src/app/app.routes.ts:16:36:
+      16 │ ...: () => import('./plan-trip/plan-trip.component').then(m => m.P...
+         ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./saved-routes/saved-routes.component"
+
+    src/app/app.routes.ts:21:36:
+      21 │ ...) => import('./saved-routes/saved-routes.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./my-city/my-city.component"
+
+    src/app/app.routes.ts:26:36:
+      26 │ ...nt: () => import('./my-city/my-city.component').then(m => m.MyC...
+         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.007 seconds]
+
+✘ [ERROR] Could not resolve "./nearby-stops/nearby-stops.component"
+
+    src/app/app.routes.ts:11:36:
+      11 │ ...) => import('./nearby-stops/nearby-stops.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './nearby-stops/nearby-stops.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:14:13:
+      14 │       import('./nearby-stops/nearby-stops.component').then(m => m....
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./plan-trip/plan-trip.component"
+
+    src/app/app.routes.ts:16:36:
+      16 │ ...: () => import('./plan-trip/plan-trip.component').then(m => m.P...
+         ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './plan-trip/plan-trip.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:20:13:
+      20 │       import('./plan-trip/plan-trip.component').then(m => m.PlanTr...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./saved-routes/saved-routes.component"
+
+    src/app/app.routes.ts:21:36:
+      21 │ ...) => import('./saved-routes/saved-routes.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './saved-routes/saved-routes.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:26:13:
+      26 │       import('./saved-routes/saved-routes.component').then(m => m....
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./my-city/my-city.component"
+
+    src/app/app.routes.ts:26:36:
+      26 │ ...nt: () => import('./my-city/my-city.component').then(m => m.MyC...
+         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './my-city/my-city.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:32:13:
+      32 │       import('./my-city/my-city.component').then(m => m.MyCityComp...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./nearby-stops/nearby-stops.component"
+
+    src/app/app.routes.ts:11:36:
+      11 │ ...) => import('./nearby-stops/nearby-stops.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./plan-trip/plan-trip.component"
+
+    src/app/app.routes.ts:16:36:
+      16 │ ...: () => import('./plan-trip/plan-trip.component').then(m => m.P...
+         ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./saved-routes/saved-routes.component"
+
+    src/app/app.routes.ts:21:36:
+      21 │ ...) => import('./saved-routes/saved-routes.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./my-city/my-city.component"
+
+    src/app/app.routes.ts:26:36:
+      26 │ ...nt: () => import('./my-city/my-city.component').then(m => m.MyC...
+         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+

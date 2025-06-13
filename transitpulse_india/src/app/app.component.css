@@ -1,0 +1,74 @@
+/* App main content area (keeps above nav bar) */
+.app-main {
+  flex: 1 1 auto;
+  min-height: 0;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Container for vertical layout */
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  background: #f9f9f9;
+}
+
+/* Bottom navigation bar */
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background: #fff;
+  border-top: 1px solid #e0e0e0;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.03);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  font-size: 0.9rem;
+}
+
+.bottom-nav a {
+  flex: 1 1 0;
+  text-align: center;
+  padding: 8px 0 0 0;
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.bottom-nav a .material-icons {
+  font-size: 24px;
+  margin-bottom: 2px;
+}
+
+.bottom-nav a.active,
+.bottom-nav a:focus,
+.bottom-nav a:hover {
+  color: #1976D2;
+}
+
+@media (min-width: 650px) {
+  .app-main {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .app-main {
+    padding-bottom: 64px; /* Space for nav */
+  }
+}
+
+/* Provide basic reset for router outlet children */
+router-outlet ~ * {
+  margin-top: 0;
+  padding: 1rem;
+}

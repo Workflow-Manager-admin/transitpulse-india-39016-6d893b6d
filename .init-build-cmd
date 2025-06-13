@@ -1,0 +1,4 @@
+{
+    "command": "npm install && npm run build",
+    "working_directory": "/home/kavia/workspace/code-generation/transitpulse-india-39016-6d893b6d/transitpulse_india"
+}
